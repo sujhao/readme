@@ -62,3 +62,9 @@ git submodule update --init
 git reset --hard 3a8261ad30bd9d86882880453a48abb524354317
 git push -f -u origin master
 
+//递归克隆子仓库
+git clone --recursive git@192.168.1.6：222、asn
+
+//删除远程分支后同步本地分支
+git remote prune origin
+
