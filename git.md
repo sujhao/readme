@@ -68,3 +68,14 @@ git clone --recursive git@192.168.1.6：222、asn
 //删除远程分支后同步本地分支
 git remote prune origin
 
+//查看当前git配置
+git config --list
+
+//合并master分支a.txt文件
+git checkout -p master a.txt
+
+//设置快捷键
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
