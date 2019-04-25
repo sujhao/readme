@@ -1,0 +1,20 @@
+
+cd ~
+ vim ~/.bashrc
+PS1='>>> \w\012\$ '
+
+export SVN_EDITOR=vim
+
+export LS_OPTIONS='--color=auto'
+
+export CLICOLOR=1
+
+export LSCOLORS=gxfxaxdxcxegedabagacad
+
+alias ll='ls -al'
+
+alias rm="rm -i"
+
+#alias .svnignore="svn propedit svn:ignore "
+
+"~/.bashrc" 15L, 298C
