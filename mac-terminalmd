@@ -3,6 +3,9 @@ cd ~
  vim ~/.bashrc
 PS1='>>> \w\012\$ '
 
+PS1='\u>>> \w\012\$'
+
+
 export SVN_EDITOR=vim
 
 export LS_OPTIONS='--color=auto'
