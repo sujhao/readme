@@ -82,3 +82,7 @@ git config --global alias.br branch
 git config --global alias.ci commit
 
 git config --global alias.st status
+
+
+git config --global user.name jhao
+git config --global user.email jhao123456@abc.com
