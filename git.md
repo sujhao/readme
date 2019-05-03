@@ -87,3 +87,19 @@ git config --global alias.st status
 git config --global user.name jhao
 
 git config --global user.email jhao123456@abc.com
+
+
+
+## mac 生成ssh key
+
+
+
+ - 输入指令：ssh-keygen -t rsa -C “test@qq.com"，提示输入保存密钥路径，直接回车即可（三次默认回车）。
+ - cd ~/.ssh，文件夹内会存在2个文件：id_rsa和id_rsa.pub。
+ - 将公钥内容添加到GitHub，即id_rsa.pub文件拷贝到git服务器配置上
+
+
+
+
+
+
