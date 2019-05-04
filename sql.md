@@ -1,4 +1,4 @@
-## Mysql
+## Mysql 重置密码
 - 如果忘记密码,强行修改:
 - 停止Mysql服务 sudo /usr/local/mysql/support-files/mysql.server stop
 - 进入终端输入：cd /usr/local/mysql/bin/回车后;
