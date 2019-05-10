@@ -11,5 +11,6 @@
 - *.zip 用 unzip 解压
 
 ## Mac kill 进程
-sudo lsof -i:9527
-sudo kill 2193
+
+- sudo lsof -i:9527
+- sudo kill 2193
