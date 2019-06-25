@@ -14,8 +14,8 @@ yum install pptpd ppp
 
 安装pptpd 　　pptpd 经常用来穿墙，或者是进行机房服务器管理
 
-wget http://poptop.sourceforge.net/yum/stable/rhel6Server/pptp-release-current.noarch.rpm
-rpm -ivh pptp-release-current.noarch.rpm
+wget http://poptop.sourceforge.net/yum/stable/packages/pptpd-1.4.0-1.el6.x86_64.rpm
+rpm -Uhv pptpd-1.4.0-1.el6.x86_64.rpm
 
 ## 修改配置
 
@@ -58,24 +58,32 @@ net.ipv4.ip_forward = 1将值改为1，即为启用
 保存退出，执行sysctl -p 使之生效
 
 
+        （1）创建规则文件：
 
-六、iptables！！！！ （注意）
-检查是否安装了iptables 
-service iptables status 
-安装iptables 
-yum install -y iptables 
-升级iptables 
-yum update iptables 
-安装iptables-services 
-yum install iptables-services
+        touch /usr/lib/firewalld/services/pptpd.xml
+
+ （2）修改规则文件
+
+        vim /usr/lib/firewalld/services/pptpd.xml
+
+        <?xml version="1.0" encoding="utf-8"?>
+
+        <service>
 
 
-需要开启1723端口 同时要做一条snat。（我曾天真的以为关掉防火墙就好了，结果连上vpn之后却不能上网！！纠结！！）
 
-iptables -A INPUT -p tcp -m tcp --dport 1723 -j ACCEPT  （开启1723端口）
+               <short>pptpd</short>
 
-iptables -t nat -A POSTROUTING -s 192.168.80.0/24 -o eth0 -j MASQUERADE  ## 192.168.80.0/24  vpn远程服务器地址范围 etho 网卡设备名
 
-iptables -A FORWARD -s 192.168.80.0/24 -o eth0 -j ACCEPT 
 
-iptables -A FORWARD -d 192.168.80.0/24 -i eth0 -j ACCEPT
+               <description>PPTP</description>
+
+
+
+               <port protocol="tcp" port="1723"/>
+
+
+
+        </service>
+
+
