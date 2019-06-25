@@ -69,4 +69,6 @@ vncserver -kill :1 # 杀掉原来的桌面进程（假设桌面号为:1）
 - cd node-v10.9.0-linux-x64/                  // 进入解压目录
 - ./bin/node -v                               // 执行node命令 查看版本
 
+## linux生成ssh-key
+    ssh-keygen -t rsa -C su_jiehao@qq.com
 
