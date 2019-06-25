@@ -10,7 +10,7 @@
 - *.rar 用 unrar e解压
 - *.zip 用 unzip 解压
 
-## Mac kill 进程
+##  kill 进程
 
 - sudo lsof -i:9527
 - sudo kill 2193
