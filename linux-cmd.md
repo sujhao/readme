@@ -58,5 +58,15 @@ gnome-terminal &
 5.依次运行以下命令生成新的会话
 
 vncserver -kill :1 # 杀掉原来的桌面进程（假设桌面号为:1）
- vncserver :1 #生成新的会话
+ vncserver :1 #生成新的会话 
+
+
+
+## linux安装 nodejs
+
+- wget https://nodejs.org/dist/v10.9.0/node-v10.9.0-linux-x64.tar.xz    // 下载
+- tar xf  node-v10.9.0-linux-x64.tar.xz       // 解压
+- cd node-v10.9.0-linux-x64/                  // 进入解压目录
+- ./bin/node -v                               // 执行node命令 查看版本
+
 
