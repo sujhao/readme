@@ -21,6 +21,7 @@
 # ubantu14.04安装图形化界面并使用VNCViewer连接
 
 1.安全组和防火墙需要放行5901端口（vncserver端口）
+
 2.下载VNC viewer客户端连接软件https://www.realvnc.com/en/connect/download/viewer/
 
 
