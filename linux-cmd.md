@@ -72,3 +72,6 @@ vncserver -kill :1 # 杀掉原来的桌面进程（假设桌面号为:1）
 ## linux生成ssh-key
     ssh-keygen -t rsa -C su_jiehao@qq.com
 
+
+## centos 安装git
+yum install git
