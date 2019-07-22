@@ -16,5 +16,7 @@
 - redis> get foo
 - "bar"
 
+打开redis.conf文件，找到requirepass，取消注释，设置密码为:666666
+
 
  
