@@ -8,3 +8,7 @@ https://www.docker.com/
 mydockerid:  
 user:sujahao
 pass:sjh666666
+
+
+2:拉取sql-server映像
+sudo docker pull mcr.microsoft.com/mssql/server:2017-latest
