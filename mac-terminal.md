@@ -22,5 +22,16 @@ alias rm="rm -i"
 
 "~/.bashrc" 15L, 298C
 
+清除 Xcode 编译产生的缓存
+```
+open ~/Library/Developer/Xcode/DerivedData
+```
+删除 Xcode 中的 profile 证书
+```
 
+open ~/Library/MobileDevice
+```
+
+```
 source .bashrc
+```
