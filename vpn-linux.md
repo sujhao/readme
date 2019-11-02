@@ -2,10 +2,7 @@
 
 使用以下命令快速搭建 IPsec VPN 服务器：
 ```
-
-wget https://git.io/vpnsetup-centos 
-sudo sh vpnsetup.sh
-https://git.io/vpnsetup 
+sh vpnsetup-cenos.sh (在本仓库下的文件)
 ```
 android 问题
 ```
