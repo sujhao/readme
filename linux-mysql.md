@@ -42,3 +42,23 @@ set password for root@localhost = password('Abc@666666');
 ```
 
 
+## 卸载Mysql
+
+#### rpm包安装方式卸载
+```
+查包名：rpm -qa|grep -i mysql
+删除命令：rpm -e –nodeps 包名
+```
+
+#### yum安装方式下载
+```
+1.查看已安装的mysql
+命令：rpm -qa | grep -i mysql
+
+2.卸载mysql
+命令：yum remove mysql-community-server-5.7.28-1.el7.x86_64
+查看mysql的其它依赖：rpm -qa | grep -i mysql
+
+//卸载依赖
+ yum remove mysql57-community-release-el7-7.noarch
+```
