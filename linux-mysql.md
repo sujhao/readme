@@ -7,6 +7,7 @@ cd mysql
 ```
 --安装MySQL5.7版本
 ```
+wget https://dev.mysql.com/get/mysql80-community-release-el8-1.noarch.rpm
 wget http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm           
 ```
 
