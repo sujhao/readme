@@ -25,7 +25,7 @@
 # - DO NOT use these special characters within values: \ " '
 
 YOUR_IPSEC_PSK='666666'
-YOUR_USERNAME='haolong'
+YOUR_USERNAME='jhao'
 YOUR_PASSWORD='666666'
 
 # Important notes:   https://git.io/vpnnotes
