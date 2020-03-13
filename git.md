@@ -89,6 +89,19 @@ git config --global user.name jhao
 git config --global user.email jhao123456@abc.com
 
 
+```
+git多个remote，假如你想把一个仓库又备份到gitee又备份到github咋搞，这时候就要到多个remote
+
+git remote add gitee https://gitee .com/project.git
+
+git remote add github https://github .com/project.git
+
+git push github master
+
+git push gitee master
+
+```
+
 
 ## mac 生成ssh key
 
