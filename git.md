@@ -100,6 +100,8 @@ git push gitee master
 
 git remote rm github  //删除一个remote
 
+git pull github master //获取github上的最新到master分支
+
 
 ```
 
