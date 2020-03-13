@@ -98,6 +98,9 @@ git push github master
 
 git push gitee master
 
+git remote rm github  //删除一个remote
+
+
 ```
 
 
